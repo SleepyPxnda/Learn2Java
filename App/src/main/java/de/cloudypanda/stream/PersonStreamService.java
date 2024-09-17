@@ -4,7 +4,6 @@ import de.cloudypanda.stream.models.PersonDTO;
 
 import java.util.List;
 
-//TODO Write Test
 public class PersonStreamService extends AbstractStreamService<List<PersonDTO>> {
 
     public PersonStreamService(List<PersonDTO> elements) {
@@ -45,6 +44,7 @@ public class PersonStreamService extends AbstractStreamService<List<PersonDTO>> 
      * @return a list of formatted strings
      */
     public List<String> mapComplexToSingleString() {
+        //TODO
         return null;
     }
 }
