@@ -21,10 +21,10 @@ public class PersonStreamService extends AbstractStreamService<List<PersonDTO>> 
     }
 
     /**
-     * Filter the complex element for all elements that are over 21
-     * @return a list of complex elements with ages over 21
+     * Filter the complex element for all elements that are born before 2001
+     * @return a list of complex elements that are born before 2001
      */
-    public List<PersonDTO> filterByAge() {
+    public List<PersonDTO> filterByDateOfBirth() {
         //TODO
         return null;
     }

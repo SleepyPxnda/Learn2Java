@@ -1,6 +1,5 @@
-package stream;
+package de.cloudypanda.stream;
 
-import de.cloudypanda.stream.IntegerStreamService;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;

@@ -30,4 +30,15 @@ Wir haben hier also 2 verschiedene Doings:
 1. Filtern der unter 18 Jährigen
 2. Umändern des Namens in Uppercase
 
-Daraus können wir schlie0en, wir brauchen mindestens ein .filter() und ein .map()
+Daraus können wir schließen, wir brauchen mindestens ein .filter() und ein .map()
+Grundlegend ist bei Streams die Reihenfolge egal, man kann also auch erst mappen und dann filtern.
+Hier macht das keinen Sinn, da wir die unter 18 Jährigen nicht mehr brauchen.
+Und nur den Namen in Uppercase umwandeln wollen.
+
+```java
+
+var resultList = Persons.stream()
+    .filter(person -> person.age >= 18)
+    .map(person -> person.name.toUpperCase())
+    .toList();
+```
